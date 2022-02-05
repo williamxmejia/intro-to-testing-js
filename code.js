@@ -4,13 +4,17 @@ function helloWorld() {
 }
 
 //
-function sayHello(input){
-    if(input === "Alex"){
-        return "Hello, Alex!"
-    }else if(input === "Pat") {
-        return "Hello, Pat!"
-    } else{
-        return "Hello, Jane!"
-    }
-}
+// function sayHello(input) {
+//     switch (input) {
+//         case "Alex":
+//             return "Hello, Alex!";
+//         case "Pat":
+//             return "Hello, Pat!";
+//         default:
+//             return "Hello, " + input +"!";
+//     }
+// }
 
+function sayHello(input){
+    return "Hello, " + input +"!"
+}
