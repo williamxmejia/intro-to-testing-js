@@ -48,3 +48,13 @@ function isFive(str){
 //         default: return "Hello, " + input +"!";
 //     }
 // }
+
+
+
+function isEven(num){
+    if(num % 2 === 0 && num != 0){
+        return true
+    } else {
+        return false
+    }
+}
