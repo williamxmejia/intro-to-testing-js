@@ -17,17 +17,29 @@ function helloWorld() {
 
 function sayHello(input){
     if(typeof input === 'boolean'){
-        return "Hello, World!"
+        return "Hello, World!";
     } else if(input === null) {
-        return "Hello, World!"
+        return "Hello, World!";
     } else if(typeof input === 'number'){
-        return 'Hello, World!'
+        return 'Hello, World!';
     } else if(!isNaN(input)){
-        return 'Hello, World!'
+        return 'Hello, World!';
     } else {
-        return "Hello, " + input +"!"
+        return "Hello, " + input +"!";
     }
 }
+
+
+function isFive(str){
+    if (str === 5){
+        return true
+    }else if(str === "5") {
+        return true
+    }else{
+        return false
+    }
+}
+
 
 
 // function sayHello(input){

@@ -41,9 +41,20 @@ describe('sayHello', function(){
     });
     it('should return "Hello, World!" when executed', function(){
         expect(sayHello(!isNaN(NaN))).toBe('Hello, World!')
-    })
-    // it("should never return 'undefined' when called", function(){
-    //     expect(sayHello()).not.toBe(undefined);
-    // });
+    });
 });
 
+describe('isFive', function(){
+    it('should be a defined function' ,function(){
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return boolean value when executed', function(){
+        expect(typeof isFive()).toBe('boolean')
+    });
+    it('should return "true" when executed', function(){
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return "true" when executed', function(){
+        expect(isFive("5")).toBe(true)
+    });
+});
