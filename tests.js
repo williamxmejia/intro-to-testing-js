@@ -93,4 +93,25 @@ describe('isEven',function(){
     it('should return "false" when executed', function(){
         expect(isEven(false)).toBe(false);
     });
+});
+
+describe('isVowel', function(){
+    it('should expect a function', function(){
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean when executed', function(){
+        expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return "true" when executed', function(){
+        expect(isVowel("a")).toBe(true)
+    });
+    it('should return "true" when executed', function(){
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return "true" when executed', function(){
+        expect(isVowel('y')).toBe(false);
+    });
+    it('should return "false" when executed', function(){
+        expect(isVowel(true || false)).toBe(false);
+    });
 })

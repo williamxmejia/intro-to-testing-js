@@ -31,13 +31,7 @@ function sayHello(input){
 
 
 function isFive(str){
-    if (str === 5){
-        return true
-    }else if(str === "5") {
-        return true
-    }else{
-        return false
-    }
+    return str === 5 || str === "5";
 }
 
 
@@ -52,9 +46,11 @@ function isFive(str){
 
 
 function isEven(num){
-    if(num % 2 === 0 && num != 0){
-        return true
-    } else {
-        return false
-    }
+    return num % 2 === 0 && num != 0;
 }
+
+function isVowel(vow){
+    return typeof vow === 'string' && vow.toLowerCase() === "a";
+}
+
+
